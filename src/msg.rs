@@ -1,6 +1,8 @@
 use iron::prelude::*;
 use router::Router;
 
+pub struct MsgHandler {}
+
 pub fn get_router() -> Router {
     let mut router = Router::new();
 
@@ -10,5 +12,9 @@ pub fn get_router() -> Router {
     router
 }
 
-fn list_msg(_: &mut Request) -> IronResult<Response> { unimplemented!() }
-fn create_msg(_: &mut Request) -> IronResult<Response> { unimplemented!() }
+fn list_msg(_: &mut Request) -> IronResult<Response> {
+    unimplemented!()
+}
+fn create_msg(_: &mut Request) -> IronResult<Response> {
+    unimplemented!()
+}

@@ -1,6 +1,6 @@
-extern crate iron;
-extern crate router;
+#[macro_use] extern crate iron;
 extern crate mount;
+extern crate router;
 
 use iron::prelude::*;
 use mount::Mount;
