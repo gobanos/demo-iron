@@ -15,6 +15,6 @@ fn main() {
     server.mount("/user", user::get_router());
 
     Iron::new(server)
-        .http("localhost:3000")
+        .http("0.0.0.0:3000")
         .expect("Failed to bind address");
 }
